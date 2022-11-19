@@ -15,20 +15,6 @@
 		<script type="text/javascript" src="./renxi/functions.js" charset="utf-8"></script>
 		<script type="text/javascript" src="./renxi/love.js" charset="utf-8"></script>
 		<style type="text/css"></style>
-		<script>
-			var str;
-			str = prompt("请输入你的名字,有惊喜！");
-			console.log(str);
-			window.onload = function() {
-				if (str != null && str !="") {
-					//document.getElementById("ai").innerHTML=str;
-					var all = document.getElementsByClassName("ai"); //返回的是数组
-					for (var i = 0; i < all.length; i++) {
-						all[i].innerHTML = str;
-					}
-				}
-			}
-		</script>
 	</head>
 
 	<body>
@@ -64,7 +50,7 @@
 					</div>
 				</div>
 				<div id="clock-box">
-					<span><font color="#666666"><span class="ai" >亲爱的 </span>，我等你已经是</font></span>
+					<span><font color="#666666"><span class="ai" >亲爱的 小福小姐</span>，我等你已经是</font></span>
 					<div id="clock"></div>
 				</div>
 				<canvas id="canvas" width="1100" height="680"></canvas>
@@ -191,8 +177,8 @@
 				}));
 				var textAnimate = eval(Jscex.compile("async", function() {
 					var together = new Date();
-					together.setFullYear(2015, (9 - 1), (2 - 1));
-					together.setHours(9);
+					together.setFullYear(2022, (10 - 1), (26 - 1));
+					together.setHours(8);
 					together.setMinutes(00);
 					together.setSeconds(0);
 					together.setMilliseconds(0);
